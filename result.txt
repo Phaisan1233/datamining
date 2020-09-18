@@ -1,0 +1,162 @@
+Convert the word to a vector using BOW model
+KNeighborsClassifier
+[[  8  26   9  34   3]
+ [  6 144  31 140   9]
+ [  9 103  36  88   0]
+ [  5  71  19 173   0]
+ [  7  39  22  54   0]]
+                               precision    recall  f1-score   support
+
+Extremely Severe Side Effects       0.23      0.10      0.14        80
+            Mild Side Effects       0.38      0.44      0.40       330
+        Moderate Side Effects       0.31      0.15      0.20       236
+              No Side Effects       0.35      0.65      0.46       268
+          Severe Side Effects       0.00      0.00      0.00       122
+
+                     accuracy                           0.35      1036
+                    macro avg       0.25      0.27      0.24      1036
+                 weighted avg       0.30      0.35      0.30      1036
+
+accuracy:  0.3484555984555985
+----------------------------------------------------------------------------
+MLPClassifier
+[[ 11  11  18   8  32]
+ [  4 183  65  68  10]
+ [  5  99  69  26  37]
+ [  2  51  19 189   7]
+ [  6  21  39  17  39]]
+                               precision    recall  f1-score   support
+
+Extremely Severe Side Effects       0.39      0.14      0.20        80
+            Mild Side Effects       0.50      0.55      0.53       330
+        Moderate Side Effects       0.33      0.29      0.31       236
+              No Side Effects       0.61      0.71      0.66       268
+          Severe Side Effects       0.31      0.32      0.32       122
+
+                     accuracy                           0.47      1036
+                    macro avg       0.43      0.40      0.40      1036
+                 weighted avg       0.46      0.47      0.46      1036
+
+accuracy:  0.47393822393822393
+============================================================================================
+Convert the word to a vector using TF-IDF
+KNeighborsClassifier
+[[ 13  30   9  21   7]
+ [  7 193  43  79   8]
+ [  9 127  39  48  13]
+ [  5 106  20 131   6]
+ [ 13  50  22  27  10]]
+                               precision    recall  f1-score   support
+
+Extremely Severe Side Effects       0.28      0.16      0.20        80
+            Mild Side Effects       0.38      0.58      0.46       330
+        Moderate Side Effects       0.29      0.17      0.21       236
+              No Side Effects       0.43      0.49      0.46       268
+          Severe Side Effects       0.23      0.08      0.12       122
+
+                     accuracy                           0.37      1036
+                    macro avg       0.32      0.30      0.29      1036
+                 weighted avg       0.35      0.37      0.34      1036
+
+accuracy:  0.37258687258687256
+----------------------------------------------------------------------------
+MLPClassifier
+[[  0  15  13  22  30]
+ [  0 229  29  70   2]
+ [  0 132  51  42  11]
+ [  0  67   4 196   1]
+ [  0  25  37  29  31]]
+                               precision    recall  f1-score   support
+
+Extremely Severe Side Effects       0.00      0.00      0.00        80
+            Mild Side Effects       0.49      0.69      0.57       330
+        Moderate Side Effects       0.38      0.22      0.28       236
+              No Side Effects       0.55      0.73      0.63       268
+          Severe Side Effects       0.41      0.25      0.31       122
+
+                     accuracy                           0.49      1036
+                    macro avg       0.37      0.38      0.36      1036
+                 weighted avg       0.43      0.49      0.44      1036
+
+accuracy:  0.4893822393822394
+============================================================================================
+Feature Selection to select some word
+Convert the word to a vector using Feature Selection
+KNeighborsClassifier
+[[ 13  27  10  20  10]
+ [  5 205  33  83   4]
+ [ 11 122  38  56   9]
+ [  6  88  14 153   7]
+ [ 16  40  26  30  10]]
+                               precision    recall  f1-score   support
+
+Extremely Severe Side Effects       0.25      0.16      0.20        80
+            Mild Side Effects       0.43      0.62      0.50       330
+        Moderate Side Effects       0.31      0.16      0.21       236
+              No Side Effects       0.45      0.57      0.50       268
+          Severe Side Effects       0.25      0.08      0.12       122
+
+                     accuracy                           0.40      1036
+                    macro avg       0.34      0.32      0.31      1036
+                 weighted avg       0.37      0.40      0.37      1036
+
+accuracy:  0.40444015444015446
+----------------------------------------------------------------------------
+MLPClassifier
+[[  0  15  15  17  33]
+ [  0 245  26  57   2]
+ [  0 121  68  36  11]
+ [  0  61   7 199   1]
+ [  0  29  27  30  36]]
+
+                               precision    recall  f1-score   support
+
+Extremely Severe Side Effects       0.00      0.00      0.00        80
+            Mild Side Effects       0.52      0.74      0.61       330
+        Moderate Side Effects       0.48      0.29      0.36       236
+              No Side Effects       0.59      0.74      0.66       268
+          Severe Side Effects       0.43      0.30      0.35       122
+
+                     accuracy                           0.53      1036
+                    macro avg       0.40      0.41      0.40      1036
+                 weighted avg       0.48      0.53      0.49      1036
+
+accuracy:  0.528957528957529
+============================================================================================
+BOW model with pos remove noun and verb
+KNeighborsClassifier
+[[  4  40   2  32   2]
+ [ 15 203  17  92   3]
+ [  5 149  16  61   5]
+ [ 14 162  15  74   3]
+ [  2  69   8  37   6]]
+                               precision    recall  f1-score   support
+Extremely Severe Side Effects       0.10      0.05      0.07        80
+            Mild Side Effects       0.33      0.62      0.43       330
+        Moderate Side Effects       0.28      0.07      0.11       236
+              No Side Effects       0.25      0.28      0.26       268
+          Severe Side Effects       0.32      0.05      0.09       122
+
+                     accuracy                           0.29      1036
+                    macro avg       0.25      0.21      0.19      1036
+                 weighted avg       0.28      0.29      0.24      1036
+accuracy:  0.2924710424710425
+----------------------------------------------------------------------------
+MLPClassifier
+[[ 12  13  23  15  17]
+ [  2 184  57  76  11]
+ [  1  99  67  46  23]
+ [  4  88  20 150   6]
+ [  6  23  31  23  39]]
+                               precision    recall  f1-score   support
+Extremely Severe Side Effects       0.48      0.15      0.23        80
+            Mild Side Effects       0.45      0.56      0.50       330
+        Moderate Side Effects       0.34      0.28      0.31       236
+              No Side Effects       0.48      0.56      0.52       268
+          Severe Side Effects       0.41      0.32      0.36       122
+
+                     accuracy                           0.44      1036
+                    macro avg       0.43      0.37      0.38      1036
+                 weighted avg       0.43      0.44      0.42      1036
+accuracy:  0.4362934362934363
+============================================================================================
